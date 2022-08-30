@@ -1,5 +1,6 @@
 body {
     background-color: whitesmoke;
+    font-family: verdana;
 }
 
 h1 {
@@ -8,13 +9,18 @@ h1 {
 }
 
 p {
-    font-family: verdana;
     font-size: 20px;
+    text-align: center;
 }
 
 .title-container {
     display: flex;
-    
+    justify-content: center;
+}
+
+.subtitle-container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -22,4 +28,31 @@ p {
     border-radius: 50%;
     height: 200px;
     width: 200px;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+a {
+    background-color: #2e89eb;
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+a:hover {
+    opacity: 1
 }
