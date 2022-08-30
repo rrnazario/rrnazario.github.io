@@ -1,0 +1,25 @@
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+.title-container {
+    display: flex;
+    
+    justify-content: center;
+}
+
+.title-container>img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
