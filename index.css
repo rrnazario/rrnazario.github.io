@@ -1,6 +1,6 @@
 body {
     background-color: whitesmoke;
-    font-family: verdana;
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
 h1 {
@@ -16,6 +16,7 @@ p {
 .title-container {
     display: flex;
     justify-content: center;
+    animation: slideUp 0.5s ease-out;
 }
 
 .subtitle-container {
@@ -28,6 +29,7 @@ p {
     border-radius: 50%;
     height: 200px;
     width: 200px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .links-container {
@@ -51,6 +53,8 @@ a {
     opacity: 0.6;
     transition: 0.3s;
     border-radius: 20px;
+    animation: slideUp 0.5s ease-out;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 a:hover {
@@ -61,5 +65,16 @@ a:hover {
     .links-container {    
         padding-right: 30%;
         padding-left: 30%;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
