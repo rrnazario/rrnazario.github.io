@@ -3,6 +3,7 @@
     --color-linkedin: #0e4dcb;
     --color-instagram: #ca2d52;
     --color-samba: #d6612b;
+    --color-youtube: #2d7a5e;
 }
 
 body {
@@ -78,6 +79,7 @@ a:active {
 .link-linkedin { background-color: var(--color-linkedin); }
 .link-instagram { background-color: var(--color-instagram); }
 .link-samba { background-color: var(--color-samba); }
+.link-youtube { background-color: var(--color-youtube); }
 
 @media (min-width: 1024px) {
     .links-container {    
